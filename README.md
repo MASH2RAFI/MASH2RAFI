@@ -1,58 +1,76 @@
 <h1 align="center">Hi, I'm Mashrafi 👋</h1>
 
 <p align="center">
-  <em>Building calm, cohesive Linux desktops — one theme at a time.</em>
+  <em>Polished tools for the Linux desktop, web apps for teams, and deep learning for medical imaging.</em>
 </p>
 
 <p align="center">
-  <a href="https://github.com/MASH2RAFI/midnight-glass">
-    <img src="https://img.shields.io/badge/Featured-Midnight%20Glass-7aa2f7?style=for-the-badge&logo=linux&logoColor=white" alt="Featured project: Midnight Glass" />
-  </a>
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux" />
-  <img src="https://img.shields.io/badge/Desktop-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white" alt="Hyprland" />
+  <img src="https://img.shields.io/badge/Desktop-Hyprland%20%2B%20Omarchy-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white" alt="Hyprland + Omarchy" />
+  <a href="https://scrumspecter.vercel.app">
+    <img src="https://img.shields.io/badge/Live-ScrumSpecter-7aa2f7?style=for-the-badge&logo=vercel&logoColor=white" alt="ScrumSpecter live" />
+  </a>
 </p>
 
 ---
 
 ## About me
 
-I'm a developer and Linux desktop enthusiast focused on **theming, tooling, and polished user experiences** on Hyprland and Omarchy. I care about the small details — colors that adapt to your wallpaper, layouts that stay consistent, and configs that are easy to move between machines.
+I'm a CSE student and developer who likes building things that feel finished: desktop plugins that fit right into the shell, web apps with real workflows, and research code that others can reuse.
 
-- 🔭 Currently working on **[Midnight Glass](https://github.com/MASH2RAFI/midnight-glass)** — a glassy, wallpaper-adaptive Omarchy theme
-- 🌱 Exploring desktop automation, Waybar customization, and cross-app theming
-- 💬 Open to collaborating on Linux desktop projects, Hyprland configs, and open-source themes
-- ⚡ Fun fact: I like themes that look good at midnight *and* after a wallpaper change
+- 🧩 Building **Omarchy shell plugins** in QML, Rust and Python: sidebars, clocks, local text-to-speech
+- 🗂️ Shipping **[ScrumSpecter](https://github.com/MASH2RAFI/ScrumSpecter)**, a sprint planning app for small agile teams
+- 🩺 Researching **kidney segmentation in CT scans** with transformer-based U-Nets for my final-year thesis
+- 🎨 Theming Hyprland so colors follow the wallpaper and every app matches
 
 ---
 
-## Featured project
+## Projects
 
-### [Midnight Glass](https://github.com/MASH2RAFI/midnight-glass)
+### 🖥️ Linux desktop and Omarchy
 
-A portable Omarchy theme with wallpaper-driven colors and non-destructive Waybar integration.
-
-**Highlights**
-- Glass-inspired palette that adapts from your wallpaper
-- Reversible Waybar + Qt/Kvantum theme swaps with backups
-- Workspace numbers, battery percentage, and layout presets
-- Works across terminals, editors, and system tools
+| Project | What it does | Stack |
+| --- | --- | --- |
+| **[Omablade](https://github.com/MASH2RAFI/omablade)** | IDE-like sidebars for Omarchy: browse, search and manage files, see Git status, drag files and use a quick-action wheel. Extensible with your own panes. | Rust · QML |
+| **[Kronos](https://github.com/MASH2RAFI/omarchy-kronos)** | A large, customizable desktop clock on the wallpaper: bold hour numeral with orbital minute and second rings, saved layouts, multi-monitor and bar-aware placement. | QML · JavaScript |
+| **[Kokoro TTS](https://github.com/MASH2RAFI/kokoro-tts-omarchy)** | Local text-to-speech for the Omarchy shell, powered by Kokoro-82M. Picks the right PyTorch build for NVIDIA, AMD, Intel or CPU. | QML · Python |
+| **[Midnight Glass](https://github.com/MASH2RAFI/midnight-glass)** | Wallpaper-adaptive Omarchy theme with frosted-glass Hyprland decoration, Waybar islands and matching terminals, Nautilus and Qt apps. Every change is reversible. | Shell · Python |
 
 ```bash
-# Quick install on Omarchy
-cp -r midnight-glass ~/.config/omarchy/themes/
-cd ~/.config/omarchy/themes/midnight-glass && ./install-integration.sh
-omarchy theme set "Midnight Glass"
+# Install the plugins with Omarchy's plugin manager
+omarchy plugin add https://github.com/MASH2RAFI/omablade.git --enable
+omarchy plugin add https://github.com/MASH2RAFI/omarchy-kronos.git --enable
+omarchy plugin add https://github.com/MASH2RAFI/kokoro-tts-omarchy
 ```
+
+### 🌐 Web
+
+**[ScrumSpecter](https://github.com/MASH2RAFI/ScrumSpecter)** · [live](https://scrumspecter.vercel.app)
+Sprint planning and task tracking for small agile teams: workspaces, sprints, kanban, table and calendar views, weekly routines, five roles with change requests, push reminders, burndown and velocity analytics.
+<sub>Next.js · TypeScript · Hono · TanStack Query · Drizzle · PostgreSQL · Tailwind · shadcn/ui · Vercel</sub>
+
+### 🩺 Medical imaging research
+
+**[converter-3D-to-2D](https://github.com/MASH2RAFI/converter-3D-to-2D)**
+Extracts axial, coronal and sagittal PNG slices with class masks from 3D CT volumes (KiTS23 and a Zenodo kidney abnormality dataset), keeping only slices with labels. It prepares the data for my thesis work on kidney, tumor and cyst segmentation.
+<sub>Python · NIfTI</sub>
 
 ---
 
 ## Tech & tools
 
 <p>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Hyprland-89b4fa?style=flat-square&logo=hyprland&logoColor=white" alt="Hyprland" />
-  <img src="https://img.shields.io/badge/Waybar-7aa2f7?style=flat-square&logo=wayland&logoColor=white" alt="Waybar" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/QML%20%2F%20Qt-41CD52?style=flat-square&logo=qt&logoColor=white" alt="QML / Qt" />
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Hyprland-89b4fa?style=flat-square&logo=hyprland&logoColor=white" alt="Hyprland" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
   <img src="https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white" alt="Neovim" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 </p>
