@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Mashrafi 👋</h1>
 
 <p align="center">
-  <em>Polished tools for the Linux desktop, web apps for teams, and deep learning for medical imaging.</em>
+  <em>Polished tools for the Linux desktop and web apps that help teams ship.</em>
 </p>
 
 <p align="center">
@@ -16,16 +16,40 @@
 
 ## About me
 
-I'm a CSE student and developer who likes building things that feel finished: desktop plugins that fit right into the shell, web apps with real workflows, and research code that others can reuse.
+I'm a CSE student and developer who likes building things that feel finished: desktop plugins that fit right into the shell, and web apps with real workflows behind them.
 
-- 🧩 Building **Omarchy shell plugins** in QML, Rust and Python: sidebars, clocks, local text-to-speech
-- 🗂️ Shipping **[ScrumSpecter](https://github.com/MASH2RAFI/ScrumSpecter)**, a sprint planning app for small agile teams
-- 🩺 Researching **kidney segmentation in CT scans** with transformer-based U-Nets for my final-year thesis
+- 🧩 Also building **Omarchy shell plugins** in QML, Rust and Python: sidebars, clocks, local text-to-speech
+- 🗂️ Shipping **[ScrumSpecter](https://github.com/MASH2RAFI/ScrumSpecter)**, a full sprint-planning platform for small agile teams ([live](https://scrumspecter.vercel.app))
 - 🎨 Theming Hyprland so colors follow the wallpaper and every app matches
 
 ---
 
 ## Projects
+
+### ⭐ Featured: [ScrumSpecter](https://github.com/MASH2RAFI/ScrumSpecter)
+
+<p align="center">
+  <a href="https://scrumspecter.vercel.app">
+    <img src="https://raw.githubusercontent.com/MASH2RAFI/ScrumSpecter/main/docs/screenshots/desktop/kanban-light.png" alt="ScrumSpecter kanban board" width="820" />
+  </a>
+</p>
+
+**Sprint planning and task tracking for small agile teams.** It's built for teams that want Jira-level structure without the weight.
+
+- 🗂️ **Table, kanban and calendar** views with drag and drop, undo and bulk edit
+- 👥 **Five roles** (Admin → Viewer) with **change requests**, so everyone can suggest and leads approve
+- 🔁 **Routines** that generate weekly tasks through the sprint and skip holidays and days off
+- 🔔 **Push reminders**: tomorrow's tasks at 6 PM, and a nudge 30 minutes before a task ends
+- 🤖 **Bulk input with an AI prompt**, so you can paste in a whole sprint in seconds
+- 📈 **Burndown, velocity, capacity** and one-click Markdown sprint reports
+- 📱 Installable **PWA**, dark mode, Ctrl/⌘ K quick jump, and an end-to-end Playwright test suite
+
+<p>
+  <a href="https://scrumspecter.vercel.app"><img src="https://img.shields.io/badge/▶%20Try%20it-scrumspecter.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Try ScrumSpecter" /></a>
+  <a href="https://github.com/MASH2RAFI/ScrumSpecter"><img src="https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="ScrumSpecter source" /></a>
+</p>
+
+<sub>Next.js 14 · TypeScript · Hono · TanStack Query · Drizzle ORM · PostgreSQL 17 · Tailwind + shadcn/ui · Motion · Playwright · Vercel</sub>
 
 ### 🖥️ Linux desktop and Omarchy
 
@@ -43,18 +67,6 @@ omarchy plugin add https://github.com/MASH2RAFI/omarchy-kronos.git --enable
 omarchy plugin add https://github.com/MASH2RAFI/kokoro-tts-omarchy
 ```
 
-### 🌐 Web
-
-**[ScrumSpecter](https://github.com/MASH2RAFI/ScrumSpecter)** · [live](https://scrumspecter.vercel.app)
-Sprint planning and task tracking for small agile teams: workspaces, sprints, kanban, table and calendar views, weekly routines, five roles with change requests, push reminders, burndown and velocity analytics.
-<sub>Next.js · TypeScript · Hono · TanStack Query · Drizzle · PostgreSQL · Tailwind · shadcn/ui · Vercel</sub>
-
-### 🩺 Medical imaging research
-
-**[converter-3D-to-2D](https://github.com/MASH2RAFI/converter-3D-to-2D)**
-Extracts axial, coronal and sagittal PNG slices with class masks from 3D CT volumes (KiTS23 and a Zenodo kidney abnormality dataset), keeping only slices with labels. It prepares the data for my thesis work on kidney, tumor and cyst segmentation.
-<sub>Python · NIfTI</sub>
-
 ---
 
 ## Tech & tools
@@ -68,7 +80,6 @@ Extracts axial, coronal and sagittal PNG slices with class masks from 3D CT volu
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/Hyprland-89b4fa?style=flat-square&logo=hyprland&logoColor=white" alt="Hyprland" />
   <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
   <img src="https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white" alt="Neovim" />
