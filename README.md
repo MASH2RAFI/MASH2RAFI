@@ -30,7 +30,10 @@ I'm a CSE student and developer who likes building things that feel finished: de
 
 <p align="center">
   <a href="https://scrumspecter.vercel.app">
-    <img src="https://raw.githubusercontent.com/MASH2RAFI/ScrumSpecter/main/docs/screenshots/desktop/kanban-light.png" alt="ScrumSpecter kanban board" width="820" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MASH2RAFI/ScrumSpecter/main/docs/screenshots/dark/desktop/kanban.png" />
+      <img src="https://raw.githubusercontent.com/MASH2RAFI/ScrumSpecter/main/docs/screenshots/light/desktop/kanban.png" alt="ScrumSpecter kanban board" width="820" />
+    </picture>
   </a>
 </p>
 
